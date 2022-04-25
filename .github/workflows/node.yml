@@ -2,7 +2,9 @@ name: NASA PROJECT CI
 on: 
    push:
       branches: [master]
-   pull_reqeust: [master]   
+   pull_reqeust:    
+         branches: [master]
+
 jobs: 
 buid:
   runs-on: ubuntu-latest
@@ -10,6 +12,6 @@ buid:
   - uses: actions/checkout@v2
   - uses: actions/setup-node@v2
     with: 
-    node-version: '17.9.0'
+    node-version: '17'
 - run: npm install
 - run: npm run build --prefix client    
