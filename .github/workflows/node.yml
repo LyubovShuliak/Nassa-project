@@ -1,0 +1,15 @@
+name: NASA PROJECT CI
+on: 
+   push:
+      branches: [master]
+   pull_reqeust: [master]   
+jobs: 
+buid:
+  runs-on: ubuntu-latest
+  steps: 
+  -uses: actions/checkout@v2
+  -uses: actions/setup-node@v2
+    with: 
+    node-version: '17.9.0'
+run: npm install
+run: npm run build --prefix client    
