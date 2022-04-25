@@ -1,9 +1,9 @@
 name: NASA PROJECT CI
 on: 
    push:
-      branches: [master]
+      branches:  [ master ]
    pull_reqeust:    
-         branches: [master]
+         branches: [ master ]
 
 jobs: 
 buid:
