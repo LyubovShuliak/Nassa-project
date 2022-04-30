@@ -1,10 +1,6 @@
-FROM microsoft/windowsservercore
-
-RUN net user /add patrick
-USER patrick
+FROM node:latest
 
 WORKDIR /app
-
 
 COPY package*.json ./
 
